@@ -1,0 +1,3 @@
+doc1	hello world
+doc2	hello hadoop
+doc3	world hadoop python

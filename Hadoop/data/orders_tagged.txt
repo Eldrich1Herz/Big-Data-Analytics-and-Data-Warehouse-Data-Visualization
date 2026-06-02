@@ -1,0 +1,3 @@
+O	1	Book
+O	1	Pen
+O	2	Laptop

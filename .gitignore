@@ -1,0 +1,22 @@
+@"
+
+.venv/
+venv/
+ENV/
+env/
+Word2Vec/venv/
+Word2Vec/venv/
+
+*.csv
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+.ipynb_checkpoints/
+
+.DS_Store
+Thumbs.db
+"@ | Out-File -FilePath .gitignore -Encoding UTF8

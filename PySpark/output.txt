@@ -1,0 +1,54 @@
++----------+-----+
+|      word|count|
++----------+-----+
+|         в|    9|
+|         и|    8|
+|     перри|    4|
+|        не|    4|
+| уайт-берд|    3|
+|   каньоне|    3|
+|  сражение|    3|
+|  не-персе|    3|
+|        во|    2|
+|     армии|    2|
+|    ховард|    2|
+|       сша|    2|
+|       был|    2|
+|     время|    2|
+|  половине|    1|
+|   canyon |    1|
+|         —|    1|
+|       при|    1|
+|разработав|    1|
+|    угодил|    1|
++----------+-----+
+only showing top 20 rows
+
+Средний возраст (18+): 27.5
+=== age_category ===
++-------+---+------------+
+|   name|age|age_category|
++-------+---+------------+
+|  Alice| 25|       adult|
+|    Bob| 17|       minor|
+|Charlie| 30|       adult|
++-------+---+------------+
+
+=== Shuffle пример ===
+== Physical Plan ==
+AdaptiveSparkPlan isFinalPlan=false
++- HashAggregate(keys=[key#55L], functions=[count(1)])
+   +- Exchange hashpartitioning(key#55L, 200), ENSURE_REQUIREMENTS, [plan_id=138]
+      +- HashAggregate(keys=[key#55L], functions=[partial_count(1)])
+         +- Project [key#55L]
+            +- Scan ExistingRDD[key#55L,val#56]
+
+
+=== Broadcast join ===
++-------+------+---+-----+
+|user_id|action| id| name|
++-------+------+---+-----+
+|      1| login|  1|Alice|
+|      2| click|  2|  Bob|
+|      1|logout|  1|Alice|
++-------+------+---+-----+

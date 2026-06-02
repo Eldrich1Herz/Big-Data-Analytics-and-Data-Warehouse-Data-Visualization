@@ -4,8 +4,6 @@
 venv/
 ENV/
 env/
-Word2Vec/venv/
-Word2Vec/venv/
 
 *.csv
 

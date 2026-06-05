@@ -1,20 +1,42 @@
-@"
-
+# Виртуальные окружения.
 .venv/
 venv/
 ENV/
 env/
+w2v_env/
+lab_venv/
 
-*.csv
-
+# Файлы кэша Python.
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 
+# Jupyter Notebook.
 .ipynb_checkpoints/
+*.ipynb_checkpoints/
 
+# Файлы данных.
+*.csv
+*.bin
+*.model
+*.vec
+*.npy
+*.npz
+
+# Системные файлы.
 .DS_Store
 Thumbs.db
-"@ | Out-File -FilePath .gitignore -Encoding UTF8
+desktop.ini
+
+# Файлы IDE.
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Файлы отчетов.
+*.aux
+*.out
+*.synctex.gz

@@ -144,5 +144,4 @@ st.download_button(
     mime="text/csv"
 )
 
-st.markdown("---")
 st.markdown(f"**Показано записей:** {len(filtered_df)} из {len(df)} после применения фильтров")

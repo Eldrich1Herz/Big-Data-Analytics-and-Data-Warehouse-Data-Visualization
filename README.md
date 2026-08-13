@@ -17,11 +17,11 @@
 
 ```
 ├── АБДИХД/                     # Анализ Больших данных и хранилища данных 
-│   ├── Apache Kafka-/          # Работа с Apache Kafka
+│   ├── Apache Kafka-/          # Работа с Apache Kafka (НЕ ЗАВЕРШЕНО)
 │   ├── Hadoop+/                # Hadoop и HDFS
-│   ├── Pipelines-/             # Data Pipelines
+│   ├── Pipelines-/             # Data Pipelines (НЕ ЗАВЕРШЕНО)
 │   ├── PySpark+/               # PySpark обработка данных
-│   └── Word2Vec+-/             # NLP и векторизация текста
+│   └── Word2Vec+/             # NLP и векторизация текста
 │
 └── ВАНАДАН/                    # Раздел студента Визуализация аналитических данных и анализ данных
     ├── 23.05. Python/          # Визуализация с помощью стандартных python-библиотек
@@ -86,15 +86,6 @@ bin/kafka-server-start.sh config/server.properties
 ```bash
 streamlit run app.py
 ```
-
-## Лицензия
-
-Учебный проект.
-
-## Авторы
-
-- **АБДИХД** - Разделы по Hadoop, Kafka, PySpark, Word2Vec
-- **ВАНАДАН** - Разделы по Python и Streamlit
 
 ## Ссылки
 
